@@ -1,0 +1,379 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D19421451DC210B70061C123 /* GildedRose.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C950521DC1D6DB0053FAD0 /* GildedRose.swift */; };
+		D19421461DC210B90061C123 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C950531DC1D6DB0053FAD0 /* Item.swift */; };
+		D1C950551DC1D6DB0053FAD0 /* GildedRose.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C950521DC1D6DB0053FAD0 /* GildedRose.swift */; };
+		D1C950561DC1D6DB0053FAD0 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C950531DC1D6DB0053FAD0 /* Item.swift */; };
+		D1C950571DC1D6DB0053FAD0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C950541DC1D6DB0053FAD0 /* main.swift */; };
+		D1C9505F1DC1D7120053FAD0 /* GildedRoseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C9505E1DC1D7120053FAD0 /* GildedRoseTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D1C950451DC1D6870053FAD0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D1C950471DC1D6870053FAD0 /* GildedRose */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GildedRose; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1C950521DC1D6DB0053FAD0 /* GildedRose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GildedRose.swift; sourceTree = "<group>"; };
+		D1C950531DC1D6DB0053FAD0 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		D1C950541DC1D6DB0053FAD0 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D1C9505C1DC1D7120053FAD0 /* GildedRoseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GildedRoseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1C9505E1DC1D7120053FAD0 /* GildedRoseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GildedRoseTests.swift; sourceTree = "<group>"; };
+		D1C950601DC1D7120053FAD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1C950441DC1D6870053FAD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1C950591DC1D7120053FAD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D1C9503E1DC1D6870053FAD0 = {
+			isa = PBXGroup;
+			children = (
+				D1C950511DC1D6BB0053FAD0 /* GildedRose */,
+				D1C9505D1DC1D7120053FAD0 /* GildedRoseTests */,
+				D1C950481DC1D6870053FAD0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D1C950481DC1D6870053FAD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1C950471DC1D6870053FAD0 /* GildedRose */,
+				D1C9505C1DC1D7120053FAD0 /* GildedRoseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1C950511DC1D6BB0053FAD0 /* GildedRose */ = {
+			isa = PBXGroup;
+			children = (
+				D1C950521DC1D6DB0053FAD0 /* GildedRose.swift */,
+				D1C950531DC1D6DB0053FAD0 /* Item.swift */,
+				D1C950541DC1D6DB0053FAD0 /* main.swift */,
+			);
+			path = GildedRose;
+			sourceTree = "<group>";
+		};
+		D1C9505D1DC1D7120053FAD0 /* GildedRoseTests */ = {
+			isa = PBXGroup;
+			children = (
+				D1C9505E1DC1D7120053FAD0 /* GildedRoseTests.swift */,
+				D1C950601DC1D7120053FAD0 /* Info.plist */,
+			);
+			path = GildedRoseTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1C950461DC1D6870053FAD0 /* GildedRose */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1C9504E1DC1D6870053FAD0 /* Build configuration list for PBXNativeTarget "GildedRose" */;
+			buildPhases = (
+				D1C950431DC1D6870053FAD0 /* Sources */,
+				D1C950441DC1D6870053FAD0 /* Frameworks */,
+				D1C950451DC1D6870053FAD0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GildedRose;
+			productName = GildedRose;
+			productReference = D1C950471DC1D6870053FAD0 /* GildedRose */;
+			productType = "com.apple.product-type.tool";
+		};
+		D1C9505B1DC1D7120053FAD0 /* GildedRoseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1C950611DC1D7120053FAD0 /* Build configuration list for PBXNativeTarget "GildedRoseTests" */;
+			buildPhases = (
+				D1C950581DC1D7120053FAD0 /* Sources */,
+				D1C950591DC1D7120053FAD0 /* Frameworks */,
+				D1C9505A1DC1D7120053FAD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GildedRoseTests;
+			productName = GildedRoseTests;
+			productReference = D1C9505C1DC1D7120053FAD0 /* GildedRoseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1C9503F1DC1D6870053FAD0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Maciej Witaszek";
+				TargetAttributes = {
+					D1C950461DC1D6870053FAD0 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 88N4V9BTSY;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+					D1C9505B1DC1D7120053FAD0 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 88N4V9BTSY;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D1C950421DC1D6870053FAD0 /* Build configuration list for PBXProject "GildedRose" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D1C9503E1DC1D6870053FAD0;
+			productRefGroup = D1C950481DC1D6870053FAD0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1C950461DC1D6870053FAD0 /* GildedRose */,
+				D1C9505B1DC1D7120053FAD0 /* GildedRoseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1C9505A1DC1D7120053FAD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1C950431DC1D6870053FAD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1C950561DC1D6DB0053FAD0 /* Item.swift in Sources */,
+				D1C950551DC1D6DB0053FAD0 /* GildedRose.swift in Sources */,
+				D1C950571DC1D6DB0053FAD0 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1C950581DC1D7120053FAD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1C9505F1DC1D7120053FAD0 /* GildedRoseTests.swift in Sources */,
+				D19421461DC210B90061C123 /* Item.swift in Sources */,
+				D19421451DC210B70061C123 /* GildedRose.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D1C9504C1DC1D6870053FAD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D1C9504D1DC1D6870053FAD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D1C9504F1DC1D6870053FAD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 88N4V9BTSY;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D1C950501DC1D6870053FAD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 88N4V9BTSY;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D1C950621DC1D7120053FAD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 88N4V9BTSY;
+				INFOPLIST_FILE = GildedRoseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mawitech.GildedRoseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D1C950631DC1D7120053FAD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 88N4V9BTSY;
+				INFOPLIST_FILE = GildedRoseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mawitech.GildedRoseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1C950421DC1D6870053FAD0 /* Build configuration list for PBXProject "GildedRose" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1C9504C1DC1D6870053FAD0 /* Debug */,
+				D1C9504D1DC1D6870053FAD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1C9504E1DC1D6870053FAD0 /* Build configuration list for PBXNativeTarget "GildedRose" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1C9504F1DC1D6870053FAD0 /* Debug */,
+				D1C950501DC1D6870053FAD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1C950611DC1D7120053FAD0 /* Build configuration list for PBXNativeTarget "GildedRoseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1C950621DC1D7120053FAD0 /* Debug */,
+				D1C950631DC1D7120053FAD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D1C9503F1DC1D6870053FAD0 /* Project object */;
+}
