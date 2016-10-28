@@ -14,6 +14,11 @@ public class GildedRose {
   }
   
   func updateQuality(in item: Item) {
+    if (item.name == "+5 Dexterity Vest") {
+      updateQualityNormal(in: item)
+      return
+    }
+    
     if (item.name != "Aged Brie" && item.name != "Backstage passes to a TAFKAL80ETC concert") {
       if (item.quality > 0) {
         if (item.name != "Sulfuras, Hand of Ragnaros") {
@@ -61,5 +66,17 @@ public class GildedRose {
         }
       }
     }
+  }
+  
+  func updateQualityNormal(in item: Item) {
+    item.sellIn = item.sellIn - 1
+    
+    if (item.sellIn < 0) {
+      item.quality = item.quality - 1
+    }
+    
+    item.quality = item.quality - 1
+    
+    item.quality = max(item.quality, 0)
   }
 }
