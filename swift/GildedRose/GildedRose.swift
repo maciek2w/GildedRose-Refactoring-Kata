@@ -19,6 +19,11 @@ public class GildedRose {
       return
     }
     
+    if (item.name == "Aged Brie") {
+      updateQualityAgedBrie(in: item)
+      return
+    }
+    
     if (item.name != "Aged Brie" && item.name != "Backstage passes to a TAFKAL80ETC concert") {
       if (item.quality > 0) {
         if (item.name != "Sulfuras, Hand of Ragnaros") {
@@ -78,5 +83,17 @@ public class GildedRose {
     item.quality = item.quality - 1
     
     item.quality = max(item.quality, 0)
+  }
+  
+  func updateQualityAgedBrie(in item: Item) {
+    item.sellIn = item.sellIn - 1
+    
+    if item.quality < 50 {
+      if (item.sellIn < 0) {
+        item.quality = item.quality + 1
+      }
+      
+      item.quality = item.quality + 1
+    }
   }
 }
