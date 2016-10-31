@@ -14,11 +14,6 @@ public class GildedRose {
   }
   
   func updateQuality(in item: Item) {
-    if (item.name == "+5 Dexterity Vest") {
-      updateQualityNormal(in: item)
-      return
-    }
-    
     if (item.name == "Aged Brie") {
       updateQualityAgedBrie(in: item)
       return
@@ -34,17 +29,7 @@ public class GildedRose {
       return
     }
     
-    if (item.quality > 0) {
-      item.quality = item.quality - 1
-    }
-    
-    item.sellIn = item.sellIn - 1
-    
-    if (item.sellIn < 0) {
-      if (item.quality > 0) {
-        item.quality = item.quality - 1
-      }
-    }
+    updateQualityNormal(in: item)
   }
   
   func updateQualityNormal(in item: Item) {
