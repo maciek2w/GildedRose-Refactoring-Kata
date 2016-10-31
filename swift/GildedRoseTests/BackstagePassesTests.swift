@@ -100,6 +100,27 @@ class BackstagePassesTests: XCTestCase {
     XCTAssertEqual(item.quality, 29)
   }
   
+  func testThreeDaysSellin6() {
+    let item = Item(name: "Backstage passes to a TAFKAL80ETC concert", sellIn: 6, quality: 24)
+    
+    let app = GildedRose(items: [item]);
+    
+    app.updateQuality();
+    
+    XCTAssertEqual(item.sellIn, 5)
+    XCTAssertEqual(item.quality, 26)
+    
+    app.updateQuality();
+    
+    XCTAssertEqual(item.sellIn, 4)
+    XCTAssertEqual(item.quality, 29)
+    
+    app.updateQuality();
+    
+    XCTAssertEqual(item.sellIn, 3)
+    XCTAssertEqual(item.quality, 32)
+  }
+  
   func testThreeDaysMaxQuality50() {
     let item = Item(name: "Backstage passes to a TAFKAL80ETC concert", sellIn: 10, quality: 49)
     
