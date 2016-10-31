@@ -78,4 +78,57 @@ class BackstagePassesTests: XCTestCase {
     XCTAssertEqual(item.sellIn, 3)
     XCTAssertEqual(item.quality, 50)
   }
+  
+  func testThreeDaysSellin11() {
+    let item = Item(name: "Backstage passes to a TAFKAL80ETC concert", sellIn: 11, quality: 24)
+    
+    let app = GildedRose(items: [item]);
+    
+    app.updateQuality();
+    
+    XCTAssertEqual(item.sellIn, 10)
+    XCTAssertEqual(item.quality, 25)
+    
+    app.updateQuality();
+    
+    XCTAssertEqual(item.sellIn, 9)
+    XCTAssertEqual(item.quality, 27)
+    
+    app.updateQuality();
+    
+    XCTAssertEqual(item.sellIn, 8)
+    XCTAssertEqual(item.quality, 29)
+  }
+  
+  func testThreeDaysMaxQuality50() {
+    let item = Item(name: "Backstage passes to a TAFKAL80ETC concert", sellIn: 10, quality: 49)
+    
+    let app = GildedRose(items: [item]);
+    
+    app.updateQuality();
+    
+    XCTAssertEqual(item.sellIn, 9)
+    XCTAssertEqual(item.quality, 50)
+    
+    app.updateQuality();
+    
+    XCTAssertEqual(item.sellIn, 8)
+    XCTAssertEqual(item.quality, 50)
+    
+    app.updateQuality();
+    
+    XCTAssertEqual(item.sellIn, 7)
+    XCTAssertEqual(item.quality, 50)
+  }
+  
+  func testOneDaySellinNegative() {
+    let item = Item(name: "Backstage passes to a TAFKAL80ETC concert", sellIn: -1, quality: 20)
+    
+    let app = GildedRose(items: [item]);
+    
+    app.updateQuality();
+    
+    XCTAssertEqual(item.sellIn, -2)
+    XCTAssertEqual(item.quality, 0)
+  }
 }
