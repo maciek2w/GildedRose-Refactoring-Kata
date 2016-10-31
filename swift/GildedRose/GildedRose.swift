@@ -14,22 +14,16 @@ public class GildedRose {
   }
   
   func updateQuality(in item: Item) {
-    if (item.name == "Aged Brie") {
+    switch item.name {
+    case "Aged Brie":
       updateQualityAgedBrie(in: item)
-      return
-    }
-    
-    if (item.name == "Sulfuras, Hand of Ragnaros") {
+    case "Sulfuras, Hand of Ragnaros":
       updateQualitySulfurasHandofRagnaros(in: item)
-      return
-    }
-    
-    if (item.name == "Backstage passes to a TAFKAL80ETC concert") {
+    case "Backstage passes to a TAFKAL80ETC concert":
       updateQualityBackstagePasses(in: item)
-      return
+    default:
+      updateQualityNormal(in: item)
     }
-    
-    updateQualityNormal(in: item)
   }
   
   func updateQualityNormal(in item: Item) {
