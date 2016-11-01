@@ -47,6 +47,13 @@ public class GildedRose {
     }
   }
   
+  class SulfurasHandofRagnarosBehaviour: BaseBehaviour {
+    
+    override func tick() {
+      //Do nothing
+    }
+  }
+  
   public func updateQuality() {
     
     for i in 0..<items.count {
@@ -60,17 +67,14 @@ public class GildedRose {
       let behaviour = AgedBrieBehaviour(item: item)
       behaviour.tick()
     case "Sulfuras, Hand of Ragnaros":
-      updateQualitySulfurasHandofRagnaros(in: item)
+      let behaviour = SulfurasHandofRagnarosBehaviour(item: item)
+      behaviour.tick()
     case "Backstage passes to a TAFKAL80ETC concert":
       updateQualityBackstagePasses(in: item)
     default:
       let behaviour = NormalBehaviour(item: item)
       behaviour.tick()
     }
-  }
-  
-  func updateQualitySulfurasHandofRagnaros(in item: Item) {
-    //Do nothing
   }
   
   func updateQualityBackstagePasses(in item: Item) {
