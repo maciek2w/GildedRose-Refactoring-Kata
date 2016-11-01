@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D16BBA9A1DC3082600272469 /* ElixirOfTheMongooseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16BBA991DC3082600272469 /* ElixirOfTheMongooseTests.swift */; };
+		D16BBA9C1DC3086600272469 /* SulfurasHandOfRagnarosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16BBA9B1DC3086600272469 /* SulfurasHandOfRagnarosTests.swift */; };
+		D16BBA9E1DC309F600272469 /* BackstagePassesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16BBA9D1DC309F600272469 /* BackstagePassesTests.swift */; };
+		D16BBAA01DC30ADF00272469 /* ConjuredManaCakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16BBA9F1DC30ADF00272469 /* ConjuredManaCakeTests.swift */; };
 		D19421451DC210B70061C123 /* GildedRose.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C950521DC1D6DB0053FAD0 /* GildedRose.swift */; };
 		D19421461DC210B90061C123 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C950531DC1D6DB0053FAD0 /* Item.swift */; };
+		D19421481DC213140061C123 /* DexterityVestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19421471DC213140061C123 /* DexterityVestTests.swift */; };
+		D194214A1DC213400061C123 /* AgedBrieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19421491DC213400061C123 /* AgedBrieTests.swift */; };
 		D1C950551DC1D6DB0053FAD0 /* GildedRose.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C950521DC1D6DB0053FAD0 /* GildedRose.swift */; };
 		D1C950561DC1D6DB0053FAD0 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C950531DC1D6DB0053FAD0 /* Item.swift */; };
 		D1C950571DC1D6DB0053FAD0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C950541DC1D6DB0053FAD0 /* main.swift */; };
@@ -28,6 +34,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D16BBA991DC3082600272469 /* ElixirOfTheMongooseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElixirOfTheMongooseTests.swift; sourceTree = "<group>"; };
+		D16BBA9B1DC3086600272469 /* SulfurasHandOfRagnarosTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SulfurasHandOfRagnarosTests.swift; sourceTree = "<group>"; };
+		D16BBA9D1DC309F600272469 /* BackstagePassesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackstagePassesTests.swift; sourceTree = "<group>"; };
+		D16BBA9F1DC30ADF00272469 /* ConjuredManaCakeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConjuredManaCakeTests.swift; sourceTree = "<group>"; };
+		D19421471DC213140061C123 /* DexterityVestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DexterityVestTests.swift; sourceTree = "<group>"; };
+		D19421491DC213400061C123 /* AgedBrieTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgedBrieTests.swift; sourceTree = "<group>"; };
 		D1C950471DC1D6870053FAD0 /* GildedRose */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GildedRose; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1C950521DC1D6DB0053FAD0 /* GildedRose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GildedRose.swift; sourceTree = "<group>"; };
 		D1C950531DC1D6DB0053FAD0 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -86,8 +98,14 @@
 		D1C9505D1DC1D7120053FAD0 /* GildedRoseTests */ = {
 			isa = PBXGroup;
 			children = (
-				D1C9505E1DC1D7120053FAD0 /* GildedRoseTests.swift */,
 				D1C950601DC1D7120053FAD0 /* Info.plist */,
+				D1C9505E1DC1D7120053FAD0 /* GildedRoseTests.swift */,
+				D19421471DC213140061C123 /* DexterityVestTests.swift */,
+				D19421491DC213400061C123 /* AgedBrieTests.swift */,
+				D16BBA991DC3082600272469 /* ElixirOfTheMongooseTests.swift */,
+				D16BBA9B1DC3086600272469 /* SulfurasHandOfRagnarosTests.swift */,
+				D16BBA9D1DC309F600272469 /* BackstagePassesTests.swift */,
+				D16BBA9F1DC30ADF00272469 /* ConjuredManaCakeTests.swift */,
 			);
 			path = GildedRoseTests;
 			sourceTree = "<group>";
@@ -196,7 +214,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1C9505F1DC1D7120053FAD0 /* GildedRoseTests.swift in Sources */,
+				D194214A1DC213400061C123 /* AgedBrieTests.swift in Sources */,
+				D16BBA9C1DC3086600272469 /* SulfurasHandOfRagnarosTests.swift in Sources */,
 				D19421461DC210B90061C123 /* Item.swift in Sources */,
+				D16BBA9E1DC309F600272469 /* BackstagePassesTests.swift in Sources */,
+				D19421481DC213140061C123 /* DexterityVestTests.swift in Sources */,
+				D16BBAA01DC30ADF00272469 /* ConjuredManaCakeTests.swift in Sources */,
+				D16BBA9A1DC3082600272469 /* ElixirOfTheMongooseTests.swift in Sources */,
 				D19421451DC210B70061C123 /* GildedRose.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
