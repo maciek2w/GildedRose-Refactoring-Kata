@@ -54,6 +54,30 @@ public class GildedRose {
     }
   }
   
+  class BackstagePassesBehaviour: BaseBehaviour {
+    
+    override func tick() {
+      super.tick()
+      
+      if (item.sellIn < 0) {
+        item.quality = 0
+      }
+      else {
+        item.quality = item.quality + 1
+        
+        if (item.sellIn < 10) {
+          item.quality = item.quality + 1
+        }
+        
+        if (item.sellIn < 5) {
+          item.quality = item.quality + 1
+        }
+        
+        item.quality = min(item.quality, 50)
+      }
+    }
+  }
+  
   public func updateQuality() {
     
     for i in 0..<items.count {
@@ -70,31 +94,11 @@ public class GildedRose {
       let behaviour = SulfurasHandofRagnarosBehaviour(item: item)
       behaviour.tick()
     case "Backstage passes to a TAFKAL80ETC concert":
-      updateQualityBackstagePasses(in: item)
+      let behaviour = BackstagePassesBehaviour(item: item)
+      behaviour.tick()
     default:
       let behaviour = NormalBehaviour(item: item)
       behaviour.tick()
-    }
-  }
-  
-  func updateQualityBackstagePasses(in item: Item) {
-    item.sellIn = item.sellIn - 1
-    
-    if (item.sellIn < 0) {
-      item.quality = 0
-    }
-    else {
-      item.quality = item.quality + 1
-      
-      if (item.sellIn < 10) {
-        item.quality = item.quality + 1
-      }
-      
-      if (item.sellIn < 5) {
-        item.quality = item.quality + 1
-      }
-      
-      item.quality = min(item.quality, 50)
     }
   }
 }
