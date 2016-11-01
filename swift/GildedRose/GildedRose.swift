@@ -86,19 +86,18 @@ public class GildedRose {
   }
   
   func updateQuality(in item: Item) {
-    switch item.name {
-    case "Aged Brie":
-      let behaviour = AgedBrieBehaviour(item: item)
-      behaviour.tick()
-    case "Sulfuras, Hand of Ragnaros":
-      let behaviour = SulfurasHandofRagnarosBehaviour(item: item)
-      behaviour.tick()
-    case "Backstage passes to a TAFKAL80ETC concert":
-      let behaviour = BackstagePassesBehaviour(item: item)
-      behaviour.tick()
-    default:
-      let behaviour = NormalBehaviour(item: item)
-      behaviour.tick()
-    }
+    let behaviourMatcher: [String : () -> BaseBehaviour ] =
+      ["Aged Brie":
+        { return AgedBrieBehaviour(item: item) },
+       "Sulfuras, Hand of Ragnaros":
+        { return SulfurasHandofRagnarosBehaviour(item: item) },
+       "Backstage passes to a TAFKAL80ETC concert":
+        { return BackstagePassesBehaviour(item: item) }]
+    
+    let behaviourBuilderBlock = behaviourMatcher[item.name] ?? { return NormalBehaviour(item: item) }
+    
+    let behaviour = behaviourBuilderBlock()
+    
+    behaviour.tick()
   }
 }
