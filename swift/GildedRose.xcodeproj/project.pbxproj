@@ -19,6 +19,12 @@
 		D1C950561DC1D6DB0053FAD0 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C950531DC1D6DB0053FAD0 /* Item.swift */; };
 		D1C950571DC1D6DB0053FAD0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C950541DC1D6DB0053FAD0 /* main.swift */; };
 		D1C9505F1DC1D7120053FAD0 /* GildedRoseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C9505E1DC1D7120053FAD0 /* GildedRoseTests.swift */; };
+		D1CB0A291DC850B800434F57 /* BaseBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CB0A281DC850B800434F57 /* BaseBehaviour.swift */; };
+		D1CB0A2B1DC850E200434F57 /* Behaviours.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CB0A2A1DC850E200434F57 /* Behaviours.swift */; };
+		D1CB0A2D1DC8511D00434F57 /* BehaviourBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CB0A2C1DC8511D00434F57 /* BehaviourBuilder.swift */; };
+		D1CB0A2E1DC8525D00434F57 /* BaseBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CB0A281DC850B800434F57 /* BaseBehaviour.swift */; };
+		D1CB0A2F1DC8525F00434F57 /* Behaviours.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CB0A2A1DC850E200434F57 /* Behaviours.swift */; };
+		D1CB0A301DC8526100434F57 /* BehaviourBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CB0A2C1DC8511D00434F57 /* BehaviourBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +53,9 @@
 		D1C9505C1DC1D7120053FAD0 /* GildedRoseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GildedRoseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1C9505E1DC1D7120053FAD0 /* GildedRoseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GildedRoseTests.swift; sourceTree = "<group>"; };
 		D1C950601DC1D7120053FAD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1CB0A281DC850B800434F57 /* BaseBehaviour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseBehaviour.swift; sourceTree = "<group>"; };
+		D1CB0A2A1DC850E200434F57 /* Behaviours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Behaviours.swift; sourceTree = "<group>"; };
+		D1CB0A2C1DC8511D00434F57 /* BehaviourBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BehaviourBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +100,9 @@
 				D1C950521DC1D6DB0053FAD0 /* GildedRose.swift */,
 				D1C950531DC1D6DB0053FAD0 /* Item.swift */,
 				D1C950541DC1D6DB0053FAD0 /* main.swift */,
+				D1CB0A281DC850B800434F57 /* BaseBehaviour.swift */,
+				D1CB0A2A1DC850E200434F57 /* Behaviours.swift */,
+				D1CB0A2C1DC8511D00434F57 /* BehaviourBuilder.swift */,
 			);
 			path = GildedRose;
 			sourceTree = "<group>";
@@ -205,6 +217,9 @@
 			files = (
 				D1C950561DC1D6DB0053FAD0 /* Item.swift in Sources */,
 				D1C950551DC1D6DB0053FAD0 /* GildedRose.swift in Sources */,
+				D1CB0A2B1DC850E200434F57 /* Behaviours.swift in Sources */,
+				D1CB0A2D1DC8511D00434F57 /* BehaviourBuilder.swift in Sources */,
+				D1CB0A291DC850B800434F57 /* BaseBehaviour.swift in Sources */,
 				D1C950571DC1D6DB0053FAD0 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,13 +228,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1CB0A2E1DC8525D00434F57 /* BaseBehaviour.swift in Sources */,
 				D1C9505F1DC1D7120053FAD0 /* GildedRoseTests.swift in Sources */,
+				D1CB0A2F1DC8525F00434F57 /* Behaviours.swift in Sources */,
 				D194214A1DC213400061C123 /* AgedBrieTests.swift in Sources */,
 				D16BBA9C1DC3086600272469 /* SulfurasHandOfRagnarosTests.swift in Sources */,
 				D19421461DC210B90061C123 /* Item.swift in Sources */,
 				D16BBA9E1DC309F600272469 /* BackstagePassesTests.swift in Sources */,
 				D19421481DC213140061C123 /* DexterityVestTests.swift in Sources */,
 				D16BBAA01DC30ADF00272469 /* ConjuredManaCakeTests.swift in Sources */,
+				D1CB0A301DC8526100434F57 /* BehaviourBuilder.swift in Sources */,
 				D16BBA9A1DC3082600272469 /* ElixirOfTheMongooseTests.swift in Sources */,
 				D19421451DC210B70061C123 /* GildedRose.swift in Sources */,
 			);
