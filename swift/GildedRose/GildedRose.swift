@@ -1,3 +1,6 @@
+protocol BehaviourProtocol {
+  func tick()
+}
 
 public class GildedRose {
   var items:[Item]
@@ -6,7 +9,7 @@ public class GildedRose {
     self.items = items
   }
   
-  class BaseBehaviour {
+  class BaseBehaviour: BehaviourProtocol {
     let item: Item
     init(item: Item) {
       self.item = item
@@ -91,8 +94,8 @@ public class GildedRose {
     behaviour.tick()
   }
   
-  func behaviourBuilder(for item: Item) -> BaseBehaviour {
-    let behaviourMatcher: [String : () -> BaseBehaviour ] =
+  func behaviourBuilder(for item: Item) -> BehaviourProtocol {
+    let behaviourMatcher: [String : () -> BehaviourProtocol ] =
       ["Aged Brie":
         { return AgedBrieBehaviour(item: item) },
        "Sulfuras, Hand of Ragnaros":
