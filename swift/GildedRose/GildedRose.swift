@@ -25,6 +25,25 @@ public class GildedRose {
     }
   }
   
+  class AgedBrieBehaviour {
+    let item: Item
+    init(item: Item) {
+      self.item = item
+    }
+    
+    func tick() {
+      item.sellIn = item.sellIn - 1
+      
+      if item.quality < 50 {
+        if (item.sellIn < 0) {
+          item.quality = item.quality + 1
+        }
+        
+        item.quality = item.quality + 1
+      }
+    }
+  }
+  
   public func updateQuality() {
     
     for i in 0..<items.count {
@@ -35,7 +54,8 @@ public class GildedRose {
   func updateQuality(in item: Item) {
     switch item.name {
     case "Aged Brie":
-      updateQualityAgedBrie(in: item)
+      let behaviour = AgedBrieBehaviour(item: item)
+      behaviour.tick()
     case "Sulfuras, Hand of Ragnaros":
       updateQualitySulfurasHandofRagnaros(in: item)
     case "Backstage passes to a TAFKAL80ETC concert":
@@ -43,18 +63,6 @@ public class GildedRose {
     default:
       let behaviour = NormalBehaviour(item: item)
       behaviour.tick()
-    }
-  }
-  
-  func updateQualityAgedBrie(in item: Item) {
-    item.sellIn = item.sellIn - 1
-    
-    if item.quality < 50 {
-      if (item.sellIn < 0) {
-        item.quality = item.quality + 1
-      }
-      
-      item.quality = item.quality + 1
     }
   }
   
