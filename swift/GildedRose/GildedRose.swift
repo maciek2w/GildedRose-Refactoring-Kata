@@ -6,6 +6,25 @@ public class GildedRose {
     self.items = items
   }
   
+  class NormalBehaviour {
+    let item: Item
+    init(item: Item) {
+      self.item = item
+    }
+    
+    func tick() {
+      item.sellIn = item.sellIn - 1
+      
+      if (item.sellIn < 0) {
+        item.quality = item.quality - 1
+      }
+      
+      item.quality = item.quality - 1
+      
+      item.quality = max(item.quality, 0)
+    }
+  }
+  
   public func updateQuality() {
     
     for i in 0..<items.count {
@@ -22,20 +41,9 @@ public class GildedRose {
     case "Backstage passes to a TAFKAL80ETC concert":
       updateQualityBackstagePasses(in: item)
     default:
-      updateQualityNormal(in: item)
+      let behaviour = NormalBehaviour(item: item)
+      behaviour.tick()
     }
-  }
-  
-  func updateQualityNormal(in item: Item) {
-    item.sellIn = item.sellIn - 1
-    
-    if (item.sellIn < 0) {
-      item.quality = item.quality - 1
-    }
-    
-    item.quality = item.quality - 1
-    
-    item.quality = max(item.quality, 0)
   }
   
   func updateQualityAgedBrie(in item: Item) {
