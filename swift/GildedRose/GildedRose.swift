@@ -6,7 +6,7 @@ public class GildedRose {
     self.items = items
   }
   
-  class NormalBehaviour {
+  class BaseBehaviour {
     let item: Item
     init(item: Item) {
       self.item = item
@@ -14,6 +14,13 @@ public class GildedRose {
     
     func tick() {
       item.sellIn = item.sellIn - 1
+    }
+  }
+  
+  class NormalBehaviour: BaseBehaviour {
+    
+    override func tick() {
+      super.tick()
       
       if (item.sellIn < 0) {
         item.quality = item.quality - 1
@@ -25,14 +32,10 @@ public class GildedRose {
     }
   }
   
-  class AgedBrieBehaviour {
-    let item: Item
-    init(item: Item) {
-      self.item = item
-    }
+  class AgedBrieBehaviour: BaseBehaviour {
     
-    func tick() {
-      item.sellIn = item.sellIn - 1
+    override func tick() {
+      super.tick()
       
       if item.quality < 50 {
         if (item.sellIn < 0) {
