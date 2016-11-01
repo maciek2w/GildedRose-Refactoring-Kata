@@ -86,6 +86,12 @@ public class GildedRose {
   }
   
   func updateQuality(in item: Item) {
+    let behaviour = behaviourBuilder(for: item)
+    
+    behaviour.tick()
+  }
+  
+  func behaviourBuilder(for item: Item) -> BaseBehaviour {
     let behaviourMatcher: [String : () -> BaseBehaviour ] =
       ["Aged Brie":
         { return AgedBrieBehaviour(item: item) },
@@ -98,6 +104,6 @@ public class GildedRose {
     
     let behaviour = behaviourBuilderBlock()
     
-    behaviour.tick()
+    return behaviour
   }
 }
